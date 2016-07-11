@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "omniauth-nettoken"
   gem.version       = Omniauth::Nettoken::VERSION
   gem.authors       = ["James Bradley"]
-  gem.email         = ["root@jbrew.co.uk\n"]
+  gem.email         = ["root@jbrew.co.uk"]
   gem.description   = %q{OmniAuth strategy for Nettoken}
   gem.summary       = %q{OmniAuth strategy for Nettoken}
 
