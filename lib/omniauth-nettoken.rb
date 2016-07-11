@@ -11,18 +11,22 @@ module OmniAuth
         :authorize_url => "/oauth/authorize"
       }
 
-      # uid { raw_info["id"] }
-      #
-      # info do
-      #   {
-      #     :email => raw_info["email"]
-      #     # and anything else you want to return to your API consumers
-      #   }
-      # end
-      #
-      # def raw_info
-      #   @raw_info ||= access_token.get('/api/v1/me.json').parsed
-      # end
+      uid { raw_info["id"] }
+
+      info do
+        {
+          :email => raw_info["email"]
+          # and anything else you want to return to your API consumers
+        }
+      end
+
+      def callback_url
+        full_host + script_name + callback_path
+      end
+
+      def raw_info
+        @raw_info ||= access_token.get('/api/me.json').parsed
+      end
     end
   end
 end
