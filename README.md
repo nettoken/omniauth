@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-You'll need to register an app on Nettoken, you can do this here - https://www.nettoken.com/developers/apps
+You'll need to register an app on Nettoken, you can do this here - https://www.nettoken.co.uk/developers/apps
 
 Usage of the gem is very similar to other OmniAuth strategies.
 You'll need to add your app credentials to `config/initializers/omniauth.rb`:
