@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install omniauth-nettoken
 
+## OmniAuth
+
+`OmniAuth::Strategies::Nettoken` is an Omniauth strategy. Read the OmniAuth docs for detailed instructions: https://github.com/intridea/omniauth.
+
 ## Usage
 
 You'll need to register an app on Nettoken, you can do this here - https://www.nettoken.co.uk/developers/apps
